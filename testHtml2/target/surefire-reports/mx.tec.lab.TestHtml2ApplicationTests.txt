@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: mx.tec.lab.TestHtml2ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 86.473 s <<< FAILURE! - in mx.tec.lab.TestHtml2ApplicationTests
+givenAClient_whenSearchingEmptyString_thenPleaseEnterDisplayed  Time elapsed: 20.897 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Jesus-2.local', ip: '2806:108e:d:492c:f9d3:74bb:d824:6c91%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.3'
+Driver info: driver.version: ChromeDriver
+	at mx.tec.lab.TestHtml2ApplicationTests.setUp(TestHtml2ApplicationTests.java:24)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41032/status] to be available after 20002 ms
+	at mx.tec.lab.TestHtml2ApplicationTests.setUp(TestHtml2ApplicationTests.java:24)
+Caused by: java.util.concurrent.TimeoutException
+	at mx.tec.lab.TestHtml2ApplicationTests.setUp(TestHtml2ApplicationTests.java:24)
+
+givenAClient_whenEnteringAutomationPractice_thenPageTitleIsCorrect  Time elapsed: 20.011 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Jesus-2.local', ip: '2806:108e:d:492c:f9d3:74bb:d824:6c91%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.3'
+Driver info: driver.version: ChromeDriver
+	at mx.tec.lab.TestHtml2ApplicationTests.setUp(TestHtml2ApplicationTests.java:24)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:47373/status] to be available after 20004 ms
+	at mx.tec.lab.TestHtml2ApplicationTests.setUp(TestHtml2ApplicationTests.java:24)
+Caused by: java.util.concurrent.TimeoutException
+	at mx.tec.lab.TestHtml2ApplicationTests.setUp(TestHtml2ApplicationTests.java:24)
+
+givenAClient_whenSearchingNotExistingProduct_thenNoResultsDisplayed  Time elapsed: 16.536 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <No results were found for your search "chivigon"> but was: <No results were found for your search "frutas">
+	at mx.tec.lab.TestHtml2ApplicationTests.givenAClient_whenSearchingNotExistingProduct_thenNoResultsDisplayed(TestHtml2ApplicationTests.java:106)
+
